@@ -1,0 +1,2 @@
+module CervejasHelper
+end

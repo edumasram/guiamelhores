@@ -1,0 +1,19 @@
+<%= simple_form_for(@cerveja) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nome %>
+    <%= f.input :descricao %>
+    <%= f.input :cervejaria_id %>
+    <%= f.input :estilocerveja_id %>
+    <%= f.input :pais_id %>
+    <%= f.input :importadora_id %>
+    <%= f.input :graducao %>
+    <%= f.input :temperatura %>
+    <%= f.input :site %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

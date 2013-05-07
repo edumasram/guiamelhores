@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @cerveja.nome %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @cerveja.descricao %>
+</p>
+
+<p>
+  <b>Cervejaria:</b>
+  <%= @cerveja.cervejaria_id %>
+</p>
+
+<p>
+  <b>Estilocerveja:</b>
+  <%= @cerveja.estilocerveja_id %>
+</p>
+
+<p>
+  <b>Pais:</b>
+  <%= @cerveja.pais_id %>
+</p>
+
+<p>
+  <b>Importadora:</b>
+  <%= @cerveja.importadora_id %>
+</p>
+
+<p>
+  <b>Graducao:</b>
+  <%= @cerveja.graducao %>
+</p>
+
+<p>
+  <b>Temperatura:</b>
+  <%= @cerveja.temperatura %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @cerveja.site %>
+</p>
+
+
+<%= link_to 'Edit', edit_cerveja_path(@cerveja) %> |
+<%= link_to 'Back', cervejas_path %>
