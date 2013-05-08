@@ -1,14 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Nome:</b>
-  <%= @cerveja.nome %>
-</p>
-
-<p>
-  <b>Descricao:</b>
-  <%= @cerveja.descricao %>
-</p>
+<div class="row">
+  <div class="span4"><%= image_tag("http://www.brejas.com.br/cervejas/images/stories/jreviews/248_guinness-1357330251.JPG") %> </div>
+  
+  <div class="span8"><h1> <%= @cerveja.nome %>  </h1> 
 
 <p>
   <b>Cervejaria:</b>
@@ -21,7 +16,7 @@
 </p>
 
 <p>
-  <b>Pais:</b>
+  <b><i class="icon-globe"></i> Pais:</b>
   <%= @cerveja.pais_id %>
 </p>
 
@@ -32,8 +27,13 @@
 
 <p>
   <b>Graducao:</b>
-  <%= @cerveja.graducao %>
+  <%= @cerveja.graducao %> % ABV
 </p>
+
+
+
+
+
 
 <p>
   <b>Temperatura:</b>
@@ -44,6 +44,20 @@
   <b>Site:</b>
   <%= @cerveja.site %>
 </p>
+
+  </div>
+</div>
+
+
+
+
+
+<p>
+  <b>Descricao:</b>
+  <%= @cerveja.descricao %>
+</p>
+
+
 
 
 <%= link_to 'Edit', edit_cerveja_path(@cerveja) %> |
