@@ -11,9 +11,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130508033154) do
+ActiveRecord::Schema.define(:version => 20130509233439) do
 
-  create_table "cervejaria", :force => true do |t|
+  create_table "beers", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "brewery_id"
+    t.integer  "country_id"
+    t.decimal  "grad",         :precision => 3, :scale => 1
+    t.string   "temp"
+    t.string   "site"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.integer  "beerstyle_id"
+  end
+
+  create_table "beerstyles", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "breweries", :force => true do |t|
+    t.string   "name"
+    t.string   "site"
+    t.integer  "country_id"
+    t.integer  "brewerygroup_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "cervejarias", :force => true do |t|
     t.string   "nome"
     t.text     "descricao"
     t.string   "site"
@@ -35,6 +64,13 @@ ActiveRecord::Schema.define(:version => 20130508033154) do
     t.string   "site"
     t.datetime "created_at",                                     :null => false
     t.datetime "updated_at",                                     :null => false
+    t.integer  "Brewery_id"
+  end
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "roles", :force => true do |t|

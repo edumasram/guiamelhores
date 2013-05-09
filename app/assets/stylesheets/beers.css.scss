@@ -1,0 +1,37 @@
+// Place all the styles related to the Beers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700);
+
+p {
+  font-size: 1.3em;	
+
+}
+
+body {
+background-image:url('http://fotobg.ru/upload/img1350848750.jpg'); }
+
+h1 {
+font-family: 'Oleo Script Swash Caps', cursive;
+font-size: 4em;
+font-weight: 400;
+color:#333; }
+
+h3 {
+font-family: 'Oleo Script Swash Caps', cursive;
+font-size: 2em;
+font-weight: 400;
+color:#333; }
+
+.navbar .brand {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  float: left;
+  display: block;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #777777;
+  text-shadow: 0 1px 0 white;
+}

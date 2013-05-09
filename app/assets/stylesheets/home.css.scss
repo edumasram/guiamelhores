@@ -21,3 +21,10 @@ body
 {
 background-image:url('http://www.freecomputerwallpapers.net/wallpapers/city_at_night_wallpaper-1920x1080.jpg');
 }
+
+.content {
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(255, 255, 255);
+/* RGBa with 0.6 opacity */
+background: rgba(255, 255, 255, 0.6);
+}

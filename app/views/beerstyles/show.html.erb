@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @beerstyle.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @beerstyle.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_beerstyle_path(@beerstyle) %> |
+<%= link_to 'Back', beerstyles_path %>

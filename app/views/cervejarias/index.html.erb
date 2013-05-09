@@ -1,0 +1,31 @@
+<h1>Listing cervejarias</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Descricao</th>
+    <th>Site</th>
+    <th>Pais</th>
+    <th>Grupocervejaria</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cervejarias.each do |cervejaria| %>
+  <tr>
+    <td><%= cervejaria.nome %></td>
+    <td><%= cervejaria.descricao %></td>
+    <td><%= cervejaria.site %></td>
+    <td><%= cervejaria.pais_id %></td>
+    <td><%= cervejaria.grupocervejaria_id %></td>
+    <td><%= link_to 'Show', cervejaria %></td>
+    <td><%= link_to 'Edit', edit_cervejaria_path(cervejaria) %></td>
+    <td><%= link_to 'Destroy', cervejaria, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cervejaria', new_cervejaria_path %>

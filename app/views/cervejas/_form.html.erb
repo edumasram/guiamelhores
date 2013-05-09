@@ -4,7 +4,8 @@
   <div class="form-inputs">
     <%= f.input :nome %>
     <%= f.input :descricao %>
-    <%= f.input :cervejaria_id %>
+    <%= f.input :Brewery_id %>
+    <%= f.collection_select :Brewery_id, Brewery.all, :id, :nome %>
     <%= f.input :estilocerveja_id %>
     <%= f.input :pais_id %>
     <%= f.input :importadora_id %>

@@ -1,0 +1,19 @@
+<%= simple_form_for(@beer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :brewery_id %>
+    <%= f.collection_select :brewery_id, Brewery.all, :id, :name %>
+    <%= f.input :beerstyle_id %>
+    <%= f.input :country_id %>
+    <%= f.input :grad %>
+    <%= f.input :temp %>
+    <%= f.input :site %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

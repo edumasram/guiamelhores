@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @cervejaria.nome %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @cervejaria.descricao %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @cervejaria.site %>
+</p>
+
+<p>
+  <b>Pais:</b>
+  <%= @cervejaria.pais_id %>
+</p>
+
+<p>
+  <b>Grupocervejaria:</b>
+  <%= @cervejaria.grupocervejaria_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_cervejaria_path(@cervejaria) %> |
+<%= link_to 'Back', cervejarias_path %>
